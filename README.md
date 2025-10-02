@@ -89,8 +89,10 @@ quiz-app/
 1. The quiz displays one question at a time with 4 multiple-choice options
 2. Click on your chosen answer to select it
 3. The correct answer will be highlighted in green, incorrect answers in red
-4. Use the "Next" button to proceed to the next question (Note: Next button functionality can be enhanced)
-5. The question counter shows your current progress (e.g., "1 of 5 questions")
+4. Use the "Next" button to proceed to the next question
+5. After completing all questions, view your final score
+6. Use the "Reset" button to retake the quiz
+7. The question counter shows your current progress (e.g., "1 of 5 questions")
 
 ## Development
 
@@ -116,13 +118,25 @@ To add new questions, edit the `src/assets/data.js` file:
 - **Quiz Logic**: Enhance the quiz component in `src/components/Quiz/quiz.jsx`
 - **Configuration**: Adjust settings in `vite.config.js`
 
-### Current Limitations and Enhancement Opportunities
+### Features Implemented
 
-- Next button functionality needs implementation
-- Score tracking can be added
-- Quiz completion handling can be enhanced
-- Timer functionality could be added for timed quizzes
-- Question categories and difficulty levels can be implemented
+- ✅ Complete quiz flow with 5 questions
+- ✅ Answer selection with immediate feedback
+- ✅ Score tracking and display
+- ✅ Quiz completion handling with final score
+- ✅ Reset functionality to retake the quiz
+- ✅ Answer locking to prevent multiple selections
+- ✅ Question counter showing progress
+
+### Potential Enhancements
+
+- ⏱️ Timer functionality for timed quizzes
+- 📊 Question categories and difficulty levels
+- 🎯 Quiz history and performance tracking
+- 📱 Enhanced mobile responsiveness
+- 🎨 Dark/light theme toggle
+- 🔀 Random question ordering
+- 📈 Progress bar visualization
 
 ## Contributing
 
