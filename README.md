@@ -1,29 +1,39 @@
 # Quiz App
 
-A modern, interactive quiz application built with React and Vite. This application allows users to take quizzes, track their scores, and provides an engaging learning experience.
+A simple, interactive quiz application built with React and Vite. This application presents users with 5 multiple-choice questions covering various topics including technology, geography, and general knowledge. Users can select answers and receive immediate visual feedback.
 
 ## Features
 
-- 🎯 Interactive quiz interface
-- 📊 Score tracking and progress monitoring
-- ⚡ Fast and responsive design
-- 🎨 Modern UI with smooth animations
-- 📱 Mobile-friendly responsive layout
-- 🔧 Easy to customize and extend
+- 🎯 Interactive multiple-choice quiz with 5 questions
+- ✅ Immediate feedback on answer selection (correct/incorrect highlighting)
+- 🎨 Clean, modern UI with purple-themed design
+- 📱 Responsive layout that works on different screen sizes
+- ⚡ Fast loading with Vite build system
+- 🔒 Answer locking to prevent multiple selections
+
+## Quiz Topics
+
+The quiz covers the following topics:
+- Computer hardware and networking
+- World geography
+- Email and internet terminology
+- Operating systems
+- Web technologies
 
 ## Tech Stack
 
-- **React 19** - Modern React with latest features
+- **React 19** - Modern React with hooks (useState, useRef)
 - **Vite** - Fast build tool and development server
+- **CSS3** - Custom styling with modern design
+- **Bun** - Package manager for fast installs and builds
 - **ESLint** - Code linting and quality assurance
-- **CSS3** - Modern styling with CSS modules
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
-- npm or yarn package manager
+- **Bun** (recommended) or Node.js (version 16 or higher)
+- Git
 
 ### Installation
 
@@ -58,28 +68,61 @@ bun run dev
 quiz-app/
 ├── public/                 # Static assets
 ├── src/                    # Source code
-│   ├── assets/            # Images and icons
+│   ├── assets/            # Quiz data and static files
+│   │   └── data.js       # Quiz questions and answers
 │   ├── components/        # React components
+│   │   └── Quiz/         # Quiz component and styles
+│   │       ├── quiz.jsx  # Main quiz component
+│   │       └── Quiz.css  # Quiz styling
 │   ├── App.jsx           # Main application component
 │   ├── main.jsx          # Application entry point
 │   └── index.css         # Global styles
 ├── index.html             # HTML template
 ├── package.json           # Project dependencies and scripts
 ├── vite.config.js         # Vite configuration
+├── bun.lock              # Bun lock file
 └── README.md             # Project documentation
 ```
+
+## How to Play
+
+1. The quiz displays one question at a time with 4 multiple-choice options
+2. Click on your chosen answer to select it
+3. The correct answer will be highlighted in green, incorrect answers in red
+4. Use the "Next" button to proceed to the next question (Note: Next button functionality can be enhanced)
+5. The question counter shows your current progress (e.g., "1 of 5 questions")
 
 ## Development
 
 ### Adding New Quiz Questions
 
-Quiz questions can be added by modifying the quiz data structure in the appropriate component files. The app is designed to be easily extensible for different types of quiz formats.
+To add new questions, edit the `src/assets/data.js` file:
+
+```javascript
+{
+  question: "Your question here?",
+  option1: "Option A",
+  option2: "Option B",
+  option3: "Option C",
+  option4: "Option D",
+  ans: 1, // The correct answer (1-4)
+}
+```
 
 ### Customization
 
-- **Styling**: Modify `src/index.css` and component-specific CSS files
-- **Quiz Logic**: Update quiz components in the `src/` directory
+- **Styling**: Modify `src/components/Quiz/Quiz.css` for quiz-specific styles
+- **Global Styles**: Update `src/index.css` for overall application styling
+- **Quiz Logic**: Enhance the quiz component in `src/components/Quiz/quiz.jsx`
 - **Configuration**: Adjust settings in `vite.config.js`
+
+### Current Limitations and Enhancement Opportunities
+
+- Next button functionality needs implementation
+- Score tracking can be added
+- Quiz completion handling can be enhanced
+- Timer functionality could be added for timed quizzes
+- Question categories and difficulty levels can be implemented
 
 ## Contributing
 
