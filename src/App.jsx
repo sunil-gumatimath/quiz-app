@@ -1,5 +1,5 @@
 import React from 'react'
-import Quiz from './Quiz/Quiz'
+import Quiz from './Components/Quiz/Quiz'
 
 
 
