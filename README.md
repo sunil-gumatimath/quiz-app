@@ -115,7 +115,7 @@ To add new questions, edit the `src/assets/data.js` file:
 
 - **Styling**: Modify `src/components/Quiz/Quiz.css` for quiz-specific styles
 - **Global Styles**: Update `src/index.css` for overall application styling
-- **Quiz Logic**: Enhance the quiz component in `src/components/Quiz/quiz.jsx`
+- **Quiz Logic**: Enhance the quiz component in `src/components/Quiz/Quiz.jsx`
 - **Configuration**: Adjust settings in `vite.config.js`
 
 ### Features Implemented
