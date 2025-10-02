@@ -72,7 +72,7 @@ quiz-app/
 │   │   └── data.js       # Quiz questions and answers
 │   ├── components/        # React components
 │   │   └── Quiz/         # Quiz component and styles
-│   │       ├── quiz.jsx  # Main quiz component
+│   │       ├── Quiz.jsx  # Main quiz component
 │   │       └── Quiz.css  # Quiz styling
 │   ├── App.jsx           # Main application component
 │   ├── main.jsx          # Application entry point
@@ -137,19 +137,3 @@ To add new questions, edit the `src/assets/data.js` file:
 - 🎨 Dark/light theme toggle
 - 🔀 Random question ordering
 - 📈 Progress bar visualization
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is private and all rights reserved.
-
-## Support
-
-For questions or support, please contact the development team.
